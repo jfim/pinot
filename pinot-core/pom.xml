@@ -150,4 +150,19 @@
       <scope>test</scope>
     </dependency>
    </dependencies>
+  <profiles>
+    <profile>
+      <id>contrib-confluent-platform</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <dependencies>
+        <dependency>
+          <groupId>com.linkedin.pinot</groupId>
+          <artifactId>pinot-contrib-confluent-platform</artifactId>
+          <version>${project.version}</version>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>
 </project>

@@ -816,5 +816,14 @@
       </properties>
     </profile>
     <!-- Configuration for unit/integration tests section 3 of 3 (profiles) ENDS HERE.-->
+    <profile>
+      <id>contrib-confluent-platform</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <modules>
+        <module>pinot-contrib-confluent-platform</module>
+      </modules>
+    </profile>
   </profiles>
 </project>
